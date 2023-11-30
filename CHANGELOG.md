@@ -1,3 +1,15 @@
+## 0.0.9
+
+- add Permissions
+
+## 0.0.8
+
+- add PlatformProvider
+
+## 0.0.7
+
+- add more models
+
 ## 0.0.6
 
 - add LoginSettings model

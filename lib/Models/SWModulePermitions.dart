@@ -1,4 +1,5 @@
-import 'package:secretweapon/Platform/CRUD.dart';
+
+import 'CRUD.dart';
 
 class SWModulePermitions{
   Map<String, CRUD> rules={};
