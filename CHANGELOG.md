@@ -1,3 +1,11 @@
+## 0.0.4
+
+- add CompanyColors model
+
+## 0.0.4
+
+- add Company model
+
 ## 0.0.3
 
 - add SWScreen
