@@ -1,6 +1,6 @@
-import 'package:secretweapon/Models/CompanyColors.dart';
-import 'package:secretweapon/Models/CompanyModule.dart';
-import 'package:secretweapon/Models/LoginSettings.dart';
+import 'CompanyColors.dart';
+import 'CompanyModule.dart';
+import 'LoginSettings.dart';
 
 class Company {
   String id = "";

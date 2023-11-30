@@ -27,9 +27,4 @@ class CompanyColors{
       'text': text.value.toRadixString(16),
     };
   }
-
-
-
-
-
 }

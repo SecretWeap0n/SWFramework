@@ -1,3 +1,11 @@
+## 0.0.6
+
+- add LoginSettings model
+
+## 0.0.5
+
+- add CoompanyModule model
+
 ## 0.0.4
 
 - add CompanyColors model
