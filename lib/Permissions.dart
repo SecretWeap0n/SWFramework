@@ -1,5 +1,7 @@
 import 'package:sw_framework/Models/Company.dart';
 
+import 'Models/CompanyModule.dart';
+
 
 class Permissions {
   static final Permissions _instance = Permissions._internal();

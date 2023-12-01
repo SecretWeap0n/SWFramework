@@ -1,10 +1,8 @@
 import 'dart:async';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:sw_framework/Models/Company.dart';
 
-import '../Providers/AllModulesProvider.dart';
 import 'Permissions.dart';
 
 class PlatformProvider with ChangeNotifier {
