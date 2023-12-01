@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import 'default_sw_screen.dart';
+import '../Widgets/default_sw_screen.dart';
 
 
 class SelectedScreenProvider with ChangeNotifier{

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sw_framework/Models/Company.dart';
 
-import 'Models/QuickAction.dart';
-import 'PlatformProvider.dart';
+import '../Models/QuickAction.dart';
+import '../Providers/PlatformProvider.dart';
 
 class SWTile extends StatefulWidget {
   final String title;

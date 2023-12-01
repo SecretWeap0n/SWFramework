@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'PlatformProvider.dart';
+import '../Providers/PlatformProvider.dart';
 
 class SWActionButton extends StatefulWidget {
   final bool enabled;

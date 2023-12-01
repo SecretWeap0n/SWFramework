@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sw_framework/sw_screen.dart';
+import 'package:sw_framework/Widgets/sw_screen.dart';
 
 class DefaultSWScreen extends StatelessWidget {
   const DefaultSWScreen({Key? key}) : super(key: key);

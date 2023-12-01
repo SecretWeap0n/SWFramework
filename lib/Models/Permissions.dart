@@ -1,6 +1,6 @@
 import 'package:sw_framework/Models/Company.dart';
 
-import 'Models/CompanyModule.dart';
+import 'CompanyModule.dart';
 
 
 class Permissions {

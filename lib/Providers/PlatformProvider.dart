@@ -4,7 +4,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:sw_framework/Models/Company.dart';
 
-import 'Permissions.dart';
+import '../Models/Permissions.dart';
+
 
 class PlatformProvider with ChangeNotifier {
   Company _company = Company();

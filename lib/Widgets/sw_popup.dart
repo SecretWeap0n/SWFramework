@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sw_framework/sw_action_button.dart';
+import 'package:sw_framework/Widgets/sw_action_button.dart';
 
-import 'PlatformProvider.dart';
+import '../Providers/PlatformProvider.dart';
 
 class SWPopup extends StatelessWidget {
   final String title;

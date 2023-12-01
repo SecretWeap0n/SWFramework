@@ -1,3 +1,12 @@
+## 0.0.14
+
+- add FirebaseDataProvider
+- reorder
+
+## 0.0.13
+
+- add SWProvider
+
 ## 0.0.13
 
 - add SWUser
