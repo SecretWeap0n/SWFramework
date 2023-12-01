@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../Models/Company.dart';
 import '../Responsive/screen_type_layout.dart';
 import 'PlatformProvider.dart';
+import 'SelectedScreenProvider.dart';
 import 'sw_icon_button.dart';
 
 class SWScreen<T> extends StatefulWidget {

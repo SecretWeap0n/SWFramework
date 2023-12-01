@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:sw_framework/Models/Company.dart';
 
@@ -10,13 +11,11 @@ class PlatformProvider with ChangeNotifier {
   String moduleSelected = '';
   StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? listener = null;
 
-  late AllModulesProvider modulesProvider;
 
   Company get company => _company;
 
-  PlatformProvider(AllModulesProvider _modulesProvider, String companyId) {
+  PlatformProvider(String companyId) {
     setCompany(companyId);
-    modulesProvider = _modulesProvider;
   }
 
   void setModuleSelected(String moduleId) {
@@ -28,6 +27,7 @@ class PlatformProvider with ChangeNotifier {
     if (companyId.isEmpty) return;
     listener?.cancel();
     listener = null;
+    //TODO: remover Firebase
     listener = FirebaseFirestore.instance.collection("Companies").doc(companyId).snapshots().listen((event) {
       updateCompany(event);
     });
