@@ -1,3 +1,7 @@
+## 0.0.13
+
+- add SWUser
+
 ## 0.0.12
 
 - add DefaultSWScreen
