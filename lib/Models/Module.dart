@@ -10,7 +10,7 @@ class Module{
 
   Widget screen=Container();
 
-  //TODO add dependencies
+  List<String> dependencies=[];
   Module();
 
   Module.fromDocument(String id,data,Widget screen) {
@@ -20,6 +20,7 @@ class Module{
     icon=data["icon"];
     version=data["version"]??'1.0.0';
     this.screen=screen;
+    dependencies=data["dependencies"]??[];
   }
 
   toJson() {
@@ -29,6 +30,7 @@ class Module{
       "description": description,
       "icon": icon,
       "version": version,
+      "dependencies": dependencies,
     };
   }
 }
