@@ -20,7 +20,7 @@ class Module{
     icon=data["icon"];
     version=data["version"]??'1.0.0';
     this.screen=screen;
-    dependencies=data["dependencies"]??[];
+    dependencies=data["dependencies"] != null ? List<String>.from(data["dependencies"]) : [];
   }
 
   toJson() {
