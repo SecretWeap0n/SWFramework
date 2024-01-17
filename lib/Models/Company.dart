@@ -13,6 +13,7 @@ class Company {
   //created date
   DateTime createdDate = DateTime.now();
 
+  List<String> admins = [];
   Map<String, String> users = {};
   List<String> roles = [];
 
@@ -34,6 +35,7 @@ class Company {
     this.createdDate = data["createdDate"] != null ? data["createdDate"].toDate() : DateTime.now();
     this.users = data["users"] != null ? Map<String, String>.from(data["users"]) : {};
     this.roles = data["roles"] != null ? List<String>.from(data["roles"]) : [];
+    this.admins = data["admins"] != null ? List<String>.from(data["admins"]) : [];
     this.enableNewAccounts = data["enableNewAccounts"] ?? true;
   }
 
@@ -56,6 +58,7 @@ class Company {
       "loginSettings": loginSettings.toJson(),
       "users": users,
       "roles": roles,
+      "admins": admins,
       "createdDate": createdDate,
       "enableNewAccounts": enableNewAccounts,
       "modules": modules.map((e) {
