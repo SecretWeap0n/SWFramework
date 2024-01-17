@@ -24,6 +24,7 @@ class Permissions {
 
   static bool get create {
     print("CREATE $_userRole ${_module.label}");
+    if(isAdmin) return true;
     if (CommonChecks()) return false;
 
     var isValid = _module.permissions.rules[_userRole]?.create ?? false;
@@ -33,6 +34,7 @@ class Permissions {
 
   static bool get read {
     print("READ $_userRole ${_module.label}");
+    if(isAdmin) return true;
     if (CommonChecks()) return false;
     var isValid = _module.permissions.rules[_userRole]?.read ?? false;
     print("read: $isValid");
@@ -41,6 +43,7 @@ class Permissions {
 
   static bool get update {
     print("UPDATE $_userRole ${_module.label}");
+    if(isAdmin) return true;
     if (CommonChecks()) return false;
     var isValid = _module.permissions.rules[_userRole]?.update ?? false;
     print("update: $isValid");
@@ -49,6 +52,7 @@ class Permissions {
 
   static bool get delete {
     print("DELETE $_userRole ${_module.label}");
+    if(isAdmin) return true;
     if (CommonChecks()) return false;
     var isValid = _module.permissions.rules[_userRole]?.delete ?? false;
     print("delete: $isValid");
