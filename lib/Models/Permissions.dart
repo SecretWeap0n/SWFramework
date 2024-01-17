@@ -19,7 +19,7 @@ class Permissions {
   static String _moduleSelected = "";
 
   static bool get isAdmin {
-    return _userRole.toLowerCase() == "admin";
+    return _company.admins.contains(_userId);
   }
 
   static bool get create {
@@ -81,14 +81,6 @@ class Permissions {
   }
 
   static bool CommonChecks() {
-    if (_userId.isEmpty) {
-      print("UserId is empty");
-      return true;
-    }
-    if (_userRole.isEmpty) {
-      print("Role is empty");
-      return true;
-    }
     if (_company.id.isEmpty) {
       print("Company is empty");
       return true;
@@ -97,7 +89,14 @@ class Permissions {
       print("Module is empty");
       return true;
     }
-
+    if (_userId.isEmpty) {
+      print("UserId is empty");
+      return true;
+    }
+    if (_userRole.isEmpty) {
+      print("Role is empty");
+      return true;
+    }
     if (_module.permissions.rules.isEmpty) {
       print("Module Rules is empty");
       return true;
