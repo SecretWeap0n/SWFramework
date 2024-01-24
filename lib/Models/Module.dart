@@ -23,7 +23,7 @@ class Module{
     version=data["version"]??'1.0.0';
     this.screen=screen;
     dependencies=data["dependencies"] != null ? List<String>.from(data["dependencies"]) : [];
-    model=ModuleModel.fromDocument(data["model"]);
+    model=data["model"]!=null?ModuleModel.fromDocument(data["model"]):ModuleModel();
   }
 
   toJson() {
