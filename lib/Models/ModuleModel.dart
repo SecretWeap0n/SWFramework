@@ -1,13 +1,15 @@
 class ModuleModel{
   List<ModuleModelVariable> varibles=[];
 
+  ModuleModel();
+
   Map<String, dynamic> toJson() {
     return {
       "varibles": varibles.map((e) => e.toJson()).toList(),
     };
   }
 
-  void fromDocument(data) {
+  ModuleModel.fromDocument(data) {
     varibles.clear();
     for (var _varible in data["varibles"]) {
       var varible = ModuleModelVariable.fromDocument(_varible["name"],_varible);
