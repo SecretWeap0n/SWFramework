@@ -1,9 +1,11 @@
 
 import 'package:flutter/material.dart';
+import 'package:sw_framework/Models/ModuleModel.dart';
 
 class Module{
   String id="";
   String name="";
+  ModuleModel model=ModuleModel();
   String version="1.0.0";
   String description="";
   String icon="";
