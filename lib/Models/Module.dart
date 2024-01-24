@@ -23,6 +23,7 @@ class Module{
     version=data["version"]??'1.0.0';
     this.screen=screen;
     dependencies=data["dependencies"] != null ? List<String>.from(data["dependencies"]) : [];
+    model=ModuleModel.fromDocument(data["model"]);
   }
 
   toJson() {
@@ -33,6 +34,7 @@ class Module{
       "icon": icon,
       "version": version,
       "dependencies": dependencies,
+      "model":model.toJson(),
     };
   }
 }
