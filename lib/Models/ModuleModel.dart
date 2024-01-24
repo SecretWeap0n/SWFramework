@@ -23,10 +23,7 @@ class ModuleModelVariable{
   ModuleModelVaribleType type=ModuleModelVaribleType.String;
 
   //constructor
-  ModuleModelVarible(){
-    name="New Variable";
-    type=ModuleModelVaribleType.String;
-  }
+  ModuleModelVariable();
 
   ModuleModelVariable.fromDocument(String name,Map<String,dynamic> data){
     this.name=name;
